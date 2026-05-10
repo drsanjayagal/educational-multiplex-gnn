@@ -1,0 +1,22 @@
+seed: 42
+model:
+hidden_dim: 64
+num_heads: 4
+num_layers: 2
+dropout: 0.3
+temporal_encoding_dim: 16
+training:
+batch_size: 256
+learning_rate: 0.001
+weight_decay: 0.0001
+max_epochs: 200
+early_stopping_patience: 15
+data:
+synthetic: true
+synthetic_params:
+num_nodes: 378
+num_semesters: 12
+density: 0.048
+evaluation:
+metrics: ["roc_auc", "pr_auc", "f1", "rmse"]
+n_bootstrap_samples: 1000

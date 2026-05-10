@@ -1,0 +1,4 @@
+role,mean_degree,mean_clustering,mean_betweenness
+faculty,12.4,0.38,0.045
+pgr,8.2,0.42,0.021
+ug,2.1,0.51,0.003

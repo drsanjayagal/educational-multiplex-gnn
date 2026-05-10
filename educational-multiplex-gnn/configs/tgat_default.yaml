@@ -1,0 +1,15 @@
+model:
+hidden_dim: 64
+num_heads: 4
+num_layers: 2
+dropout: 0.3
+temporal_encoding_dim: 16
+training:
+batch_size: 256
+learning_rate: 0.001
+weight_decay: 0.0001
+max_epochs: 200
+early_stopping_patience: 15
+data:
+temporal_window: 4
+edge_types: ["coauthorship", "supervision", "project", "course"]
